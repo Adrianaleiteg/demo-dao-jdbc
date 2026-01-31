@@ -47,7 +47,7 @@ public class SellerDaoJDBC implements SellerDao {
 				}
 				DB.closeResultSet(rs);
 			} else {
-				throw new DbException("Erro inesperado, nenhuma linha afetada");
+				throw new DbException("Unexpected error, no rows affected");
 			}
 		} catch (SQLException e) {
 			throw new DbException(e.getMessage());
