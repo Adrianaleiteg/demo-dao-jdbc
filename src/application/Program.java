@@ -33,7 +33,7 @@ public class Program {
 		}
 		
 		System.out.println();
-		System.out.println("====================== Teste 3: Seller insert ======================");
+		System.out.println("====================== Teste 4: Seller insert ======================");
 		Seller newSeller = new Seller (null, "Greg", "greg@gmail.com", new Date(), 4500.0, department );
 		sellerDao.insert(newSeller);
 		System.out.println("Inserted! New id = " + newSeller.getId());
